@@ -537,18 +537,21 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
-    header nav ul {
+    header nav {
         display: none;
-        flex-direction: column;
-        background-color: #222;
         position: absolute;
         top: 6em;
         left: 0;
         width: 100%;
-        text-align: center;
     }
-    header nav ul.active {
-        display: flex;
+    header nav.active {
+        display: block;
+    }
+    header nav ul {
+        flex-direction: column;
+        background-color: #222;
+        width: 100%;
+        text-align: center;
     }
     header nav ul li {
         margin: 1rem 0;
