@@ -569,13 +569,23 @@ input[type="submit"]:hover {
         flex-direction: column;
         height: auto;
     }
-    /* This new rule hides the image section on mobile */
+    .main_one #sub_main_one1,
     .main_one #sub_main_one2 {
-        display: none;
-    }
-    .main_one #sub_main_one1 {
         width: 100%;
         height: auto;
+    }
+    .main_one #sub_main_one2 {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        background-color: #805c5c;
+    }
+    .img .image {
+        position: static;
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .main_one #sub_main_one1 {
         padding-bottom: 4rem;
     }
     .social {
