@@ -80,7 +80,7 @@ ul a:hover{
 }
 .main_one #sub_main_one1 h1{
     padding: 3rem 2rem 0rem 2rem;
-    font-size: 1.3rem;
+    font-size: 4rem;
     color: var(--textcolor);
     font-family: poppins;
     line-height: 4rem;
@@ -592,7 +592,7 @@ input[type="submit"]:hover {
         transform: translate(2rem, 2rem);
     }
     .main_one #sub_main_one1 h1{
-        font-size: 1rem;
+        font-size: 3em;
     }
     .main_one #sub_main_one1 h1 div span {
         font-size: 2rem;
