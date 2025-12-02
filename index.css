@@ -538,18 +538,22 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
     header nav {
-        display: none;
+        display: block;
         position: absolute;
-        top: 6em;
+        top: 0;
         left: 0;
         width: 100%;
+        padding-top: 6em;
+        background-color: #222;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 10000;
     }
     header nav.active {
-        display: block;
+        transform: translateY(0);
     }
     header nav ul {
         flex-direction: column;
-        background-color: #222;
         width: 100%;
         text-align: center;
     }
@@ -558,30 +562,21 @@ input[type="submit"]:hover {
     }
     .hamburger {
         display: block;
+        z-index: 10001;
     }
 
     .main_one {
         flex-direction: column;
         height: auto;
     }
-    .main_one #sub_main_one1,
+    /* This new rule hides the image section on mobile */
     .main_one #sub_main_one2 {
-        width: 100%;
-        height: auto;
+        display: none;
     }
     .main_one #sub_main_one1 {
+        width: 100%;
+        height: auto;
         padding-bottom: 4rem;
-    }
-    .main_one #sub_main_one2 {
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-        background-color: #805c5c;
-    }
-    .img .image {
-        position: static;
-        width: 80%;
-        display: block;
-        margin: auto;
     }
     .social {
         transform: translate(2rem, 2rem);
